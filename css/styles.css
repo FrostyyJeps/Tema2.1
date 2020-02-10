@@ -1,0 +1,136 @@
+* { /* Gælder alt på hele siden */
+    box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
+    scroll-behavior: smooth;
+}
+
+/* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
+
+body {
+    margin: 0; /* Ingen kanter i siden af browser */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0; /* Ingen ydre margen fra overskrifter */
+    padding: 0; /* Ingen indre margen fra overskrifter */
+}
+
+ul, ol {
+    margin: 2px 10px 2px 10px; /* Mindre margen på punkter */
+    padding: 0; /* Ingen indre margen fra lister */
+    list-style-position: inside; /* List punkter står på linje */
+}
+
+li {
+    margin: 0; /* Ingen ydre margen fra listpunkter */
+}
+
+p {
+    margin: 0; /* Ingen ydre margen fra paragraffer */
+    padding: 0; /* Ingen indre margen fra paragraffer */
+}
+
+/* Sikrer billeder er responsive */
+img {
+    display: block; /* Billeder er et element (laver linjeskift) */
+    max-width: 100%; /* Bredde må maks fylde 100% */
+    height: auto; /* Højden skal tilpasse sig */
+}
+
+body{
+    background-color:#e0e0e0;
+    overscroll-behavior: contain;
+}
+
+button{
+    background-color:transparent;
+    border:none;
+    width:40%;
+    /*height:10vh;*/
+    grid-column:6/-1;
+    place-self:end;
+}
+
+button:focus{
+    outline:none;
+}
+
+.GridBody{
+    display:grid;
+    grid-template-columns:1fr;
+    font-family:sans-serif;
+}
+
+.FlexClass{
+    display: flex !important;
+}
+
+.bkg{
+    background-color:white;
+    width:100%;
+    grid-column:1/-1;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items:center;
+}
+
+.Container{
+    width:70%;
+    display:grid;
+    grid-template-columns:1fr;
+    justify-items:center;
+    margin:10% 0;
+}
+
+.navn{
+    font-weight: lighter;
+    font-size:12px;
+    justify-self:start;
+}
+
+.pris{
+    font-size:36px;
+    justify-self:start;
+}
+
+.NoneClass{
+    display: none;
+}
+
+.OmOs{
+    display:grid;
+    background-color:#C40000;
+    width:40%;
+    place-content:center;
+    min-height:10px;
+    border-radius:12px;
+    color:white;
+    margin:10% 0;
+    min-width:75px;
+    justify-self:center;
+}
+
+@media screen and (min-width:600px){
+    .GridBody{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .bkg{
+        background-color:white;
+        width:100%;
+        grid-column:1/-1;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .Container{
+        width:20%;
+        display:grid;
+        grid-template-columns:1fr;
+        justify-items:center;
+        margin:5% 2.5%;
+    }
+
+}

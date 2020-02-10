@@ -1,0 +1,119 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Skabelon</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="keywords" content="">
+    <meta name="author" content="Nikolai Raahauge">
+    <meta name="copyright" content="© Copyright 2019 Nikolai Raahauge">
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/nav.css" rel="stylesheet" type="text/css">
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+
+<div class="GridBody">
+    <div id="NavBkg">
+        <img src="images/burger.svg" id="Burger">
+        <p class="NavOverskrift">SALG OG REPERATION AF CYKLER  SIDEN  1996</p>
+        <p class="NavTekst">Passionen for cykler udtrykkes i vores store sortiment som er nøje udvalgt efter høje kvalitetskrav.<br><br>
+            Ingen opgave er for stor til vores værksted, som ikke blot gør hvad de skal, men derimod yder dét ekstra.<br><br>
+            Kom ned i butikken, og hør hvad vi kan gøre for dig.
+        </p>
+        <p class="OmOs">Om os</p>
+        <div id="BurgerContent"></div>
+        <p class="NavUnderOver">DEL DIN BETALING OP - ALTID 30-60 DAGES <span class="RedTekst">FRI KREDIT</span></p>
+        <nav>
+            <a href="#">Forside</a>
+            <a href="#">Vores cykler</a>
+            <a href="#">Bike fitting</a>
+            <a href="#">Om os</a>
+            <a href="#">Arrangementer</a>
+            <a href="#">Kontakt</a>
+        </nav>
+    </div>
+
+    </div>
+    <div class="bkg">
+        <div class="Container">
+            <img src="images/falter_e90.png" alt="Falter E-90">
+            <p class="navn">Falter E-90</p>
+            <p class="pris">19.999,-</p>
+        </div>
+
+        <div class="Container">
+            <img src="images/falter_e90.png" alt="Falter E-90">
+            <p class="navn">Gazelle Arroyo c7+</p>
+            <p class="pris">18.999,-</p>
+        </div>
+
+        <div class="Container">
+            <img src="images/falter_e90.png" alt="Falter E-90">
+            <p class="navn">Gazelle Arroyo c7+</p>
+            <p class="pris">18.999,-</p>
+        </div>
+
+        <div class="Container">
+            <img src="images/falter_e90.png" alt="Falter E-90">
+            <p class="navn">Gazelle Arroyo c7+</p>
+            <p class="pris">18.999,-</p>
+        </div>
+
+        <div class="Container">
+            <img src="images/falter_e90.png" alt="Falter E-90">
+            <p class="navn">Gazelle Arroyo c7+</p>
+            <p class="pris">18.999,-</p>
+        </div>
+
+        <div class="Container">
+            <img src="images/falter_e90.png" alt="Falter E-90">
+            <p class="navn">Gazelle Arroyo c7+</p>
+            <p class="pris">18.999,-</p>
+        </div>
+
+        <div class="Container">
+            <img src="images/falter_e90.png" alt="Falter E-90">
+            <p class="navn">Gazelle Arroyo c7+</p>
+            <p class="pris">18.999,-</p>
+        </div>
+
+        <div class="Container">
+            <img src="images/falter_e90.png" alt="Falter E-90">
+            <p class="navn">Gazelle Arroyo c7+</p>
+            <p class="pris">18.999,-</p>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    $(function(){
+        $("#Burger").click(function(){
+            $("#BurgerContent").toggleClass("FlexClass");
+            // $("#BurgerContent").fadeIn(200)
+        })
+    })
+
+</script>
+
+</body>
+</html>
