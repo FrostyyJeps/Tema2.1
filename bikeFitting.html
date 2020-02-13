@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Sigende titel</title>
+
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bikeFittingStyles.css" rel="stylesheet" type="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/8d0c68dd1c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <div class="topBar">
+
+        <div class="menuBackground"></div>
+
+        <div class="menuHeader">
+            <img src="img/Skilt.png" alt="CykleBørsen">
+
+            <nav>
+                <ul class="main">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="bikeFitting.html">Bike Fitting</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="burger">
+                <span></span>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="content">
+
+        <div class="overSkrift">
+            <h1>SALG OG REPERATION AF<br> CYKLER  SIDEN  1996</h1>
+
+            <p>Passionen for cykler udtrykkes i vores store sortiment som er nøje udvalgt efter høje kvalitetskrav.<br>
+                Ingen opgave er for stor til vores værksted, som ikke blot gør hvad de skal, men derimod yder dét ekstra.</p>
+        </div>
+
+        <div class="headerCta">
+            <button class="ctaButton headerButton">OM OS</button>
+        </div>
+
+    </div>
+
+
+
+    <div class="afbetaling">
+        <p>DEL DIN BETALING OP - ALTID 30-60 DAGES <span>FRI KREDIT</span></p>
+    </div>
+
+    <div class="videoOverlay">
+
+    </div>
+    <video autoplay muted loop id="headerVideo">
+        <source src="video/CompressedHeader.mp4" type="video/mp4">
+    </video>
+
+
+
+</div>
+
+<div class="indexContent">
+    <h2>Hvad er BikeFitting?</h2>
+    <div class="underline"></div>
+
+    <p class="infoText">Alle er forskellige, nogle har lidt skæve ben, andre har stive led. Med avanceret teknologi kan vi nu måle dette, og på den måde indstille kundens cykel så den ergonomisk passer specifikt til den enkelte. En måling tager omkring 25 minutter, og tilbydes ved køb af cykler over 15.000,-</p>
+    <button class="ctaButtonInfo">KONTAKT</button>
+</div>
+
+<div class="indexContent">
+    <h2>Hvad siger vores kunder?</h2>
+    <div class="underline"></div>
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $( document ).ready(function() {
+
+        $('.burger, .overlay').click(function(){
+            $('.burger').toggleClass('clicked');
+            $('.overlay').toggleClass('show');
+            $('nav').toggleClass('show');
+            $('body').toggleClass('overflow');
+        });
+
+    });
+</script>
+</body>
+</html>
