@@ -1,12 +1,12 @@
 * { /* Gælder alt på hele siden */
     box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
-    font-family: 'Open Sans', sans-serif;
 }
 
 /* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
 
 body {
     margin: 0; /* Ingen kanter i siden af browser */
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,19 +36,22 @@ img {
     height: auto; /* Højden skal tilpasse sig */
 }
 
-.header {
-    width: 100%;
-    height: 100vh;
 
+.topSection{
+    height: 100vh;
 }
 
+.logo{
+    max-width: 200px;
+    padding: 20px 0 0 20px;
+}
 
+.desktopNav {
+    display: none;
+}
 
-
-
-
-
-/* BURGER */
+/*  BURGER
+========================================== */
 
 .burger {
     width: 50px;
@@ -61,12 +64,12 @@ img {
 }
 
 .burger span {
-    position: relative;
     margin-bottom: 9px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    position: absolute;
     top: 50%;
     left: 50%;
     margin-left: -15px;
@@ -114,6 +117,7 @@ img {
     -ms-transform: translateY(-9px) rotate(-45deg);
     -o-transform: translateY(-9px) rotate(-45deg);
     transform: translateY(-9px) rotate(-45deg);
+
 }
 
 .burger.clicked span:before, .burger.clicked span:after { background-color: #ffffff; }
@@ -125,8 +129,8 @@ img {
 
 nav {
     background-color: #2a2a2a;
-    text-align: center;
     position: fixed;
+    text-align: center;
     z-index: 9;
     top: 0;
     right: 0;
@@ -275,7 +279,7 @@ nav .social:after {
     content: "";
     width: 230px;
     height: 2px;
-    background-color: #b7ac7f;
+    background-color: #c40000;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -288,9 +292,9 @@ nav .social a {
     margin-right: 25px;
 }
 
-nav .social a:last-of-type { margin-right: 0; }
+nav .social a:last-of-type { margin-right: 0px; }
 
-nav .social a:hover svg path, nav .social a:hover svg circle { fill: #b7ac7f; }
+nav .social a:hover svg path, nav .social a:hover svg circle { fill: #c40000; }
 
 nav .social a svg {
     width: 100%;
@@ -322,7 +326,7 @@ nav ul.sub {
 
 nav ul.sub li { margin-bottom: 10px; }
 
-nav ul.sub li:last-of-type { margin-bottom: 0; }
+nav ul.sub li:last-of-type { margin-bottom: 0px; }
 
 nav ul.sub li a {
     color: #ffffff;
@@ -336,7 +340,7 @@ nav ul.sub li a {
     transition: all 0.3s ease;
 }
 
-nav ul.sub li a:hover { color: #b7ac7f; }
+nav ul.sub li a:hover { color: #c40000; }
 
 /*  OVERLAY
 ========================================== */
@@ -352,7 +356,7 @@ nav ul.sub li a:hover { color: #b7ac7f; }
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #b7ac7f;
+    background-color: #1f1f1f;
     opacity: 0;
     visibility: hidden;
 }
@@ -362,16 +366,15 @@ nav ul.sub li a:hover { color: #b7ac7f; }
     visibility: visible;
 }
 
-/* BURGER */
+#headerVideo{
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    z-index: -2;
 
-
-
-
-
-
-
-
-
+}
 
 .videoOverlay{
     right: 0;
@@ -384,42 +387,26 @@ nav ul.sub li a:hover { color: #b7ac7f; }
     z-index: -1;
 }
 
-#headerVideo{
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    position: absolute;
-    z-index: -2;
-
-}
-.topBar {
-
-}
-
-.topBar img{
-    max-width: 200px;
-    padding: 20px;
-    z-index: 100;
-}
-
-.content {
+.flexContainer{
+    min-height: 400px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.overSkrift{
+    color: white;
     text-align: center;
-    color: #f1f1f1;
-    padding: 5px;
-    justify-content: center;
-    position: absolute;
-    top: 200px;
+    font-size: 0.8rem;
+
 }
 
-.content h1{
-    font-size: 1.7rem;
-}
-
-.content p{
-    padding-top: 50px;
+.paragraph {
+    color: white;
+    text-align: center;
 }
 
 .ctaButton{
@@ -429,15 +416,8 @@ nav ul.sub li a:hover { color: #b7ac7f; }
     padding: 10px 50px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin-top: 50px;
     border-radius: 13px;
-}
-
-.headerButton{
-    display: flex;
-    justify-self: center;
 }
 
 .afbetaling{
@@ -460,7 +440,12 @@ nav ul.sub li a:hover { color: #b7ac7f; }
 }
 
 .indexContent{
-    padding: 30px 20px;
+    padding: 0 20px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 
 .underline {
@@ -491,18 +476,8 @@ nav ul.sub li a:hover { color: #b7ac7f; }
     width: 100%;
 }
 
-.iconChild {
-    font-size: 2rem;
-    width: 30px;
-    align-items: center;
-    display: flex;
-    padding: 20px;
-}
-
-.iconChild p{
-    font-weight: lighter;
-    font-size: 0.9rem;
-    padding-left: 30px;
+.slideshowHeader{
+    padding: 20px 0 0 20px;
 }
 
 .sliderImages{
@@ -518,10 +493,27 @@ nav ul.sub li a:hover { color: #b7ac7f; }
     display: none;
 }
 
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 200px;
+    font-size: 1.5rem;
+}
 
+.iconChild{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 
-.contact{
-    margin-left: 12px;
+.iconChild p{
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+.desktopMaps{
+    display: none;
 }
 
 .maps {
@@ -537,52 +529,80 @@ nav ul.sub li a:hover { color: #b7ac7f; }
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f1f1f1;
+    color: #ffffff;
 }
 
 
+/* MediaQuery for desktopNav */
+@media screen and (min-width: 950px) {
+    .main {
+         display: none;
+     }
 
-
-@media screen and (min-width: 860px) {
-
-.location{
-    display: flex;
-    justify-content: space-between;
-}
-
-.maps{
-    height: 300px;
-    width: 500px;
-}
-
-}
-
-@media screen and (min-width: 885px) {
-    .content{
-        height: 400px;
-    }
-
-    .overSkrift{
-        height: 200px;
-    }
-
-    .headerCta {
-    }
-}
-
-@media screen and (min-width: 936px){
-
-    .menuHeader button{
+    .burger{
         display: none;
     }
 
-    .menu{
+    .overlay{
         display: none;
     }
 
-
-
-    .overSkrift{
-        padding: 0 290px;
+    .desktopNav{
+        display: inline;
     }
+
+    .mainDesktop {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+
+
+    }
+
+    .desktopNav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .desktopNav ul {
+        list-style-type: none;
+    }
+
 }
+
+/* MediaQuery for slideshow */
+@media screen and (min-width: 820px) {
+
+}
+
+/* MediaQuery for maps */
+@media screen and (min-width: 750px) {
+
+
+
+    .desktopMaps{
+        display: inline;
+        min-width: 50%;
+        padding-bottom: 50px;
+
+    }
+
+    .maps{
+        min-height: 300px;
+    }
+
+    .mobileMaps{
+        display: none;
+    }
+
+    .contactFlex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+
