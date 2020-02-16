@@ -393,6 +393,12 @@ nav ul.sub li a:hover { color: #c40000; }
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    -webkit-animation: fadein 5s;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 
@@ -418,6 +424,11 @@ nav ul.sub li a:hover { color: #c40000; }
     text-decoration: none;
     font-size: 16px;
     border-radius: 13px;
+    cursor: pointer;
+}
+
+.ctaButton:hover{
+    background-color: #2a2a2a;
 }
 
 .afbetaling{
@@ -451,7 +462,19 @@ nav ul.sub li a:hover { color: #c40000; }
 .underline {
     background-color: #C40000;
     height: 2px;
-    width: 200px;
+    width: 300px;
+}
+
+.underline2 {
+    background-color: #c4c4c4;
+    height: 1px;
+    width: 400px;
+}
+
+.flexBox{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 .infoText {
@@ -470,6 +493,12 @@ nav ul.sub li a:hover { color: #c40000; }
     font-size: 1rem;
     border-radius: 13px;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+.ctaButtonInfo:hover{
+    background-color: #2a2a2a;
+    text-decoration: underline;
 }
 
 .indexContent img{
@@ -478,20 +507,28 @@ nav ul.sub li a:hover { color: #c40000; }
 
 .slideshowHeader{
     padding: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.sliderImages{
+.udvalgteCykler{
+    padding: 20px 0
+}
+
+/* SLIDESHOW */
+.hide {
+    display: none;
+}
+
+.slideShow{
     display: flex;
     justify-content: center;
 }
 
-.sliderImages img{
-    width: 70%;
-}
+/* SLIDESHOW */
 
-.hide{
-    display: none;
-}
+
 
 .icons{
     display: flex;
@@ -558,17 +595,62 @@ nav ul.sub li a:hover { color: #c40000; }
         right: 20px;
         z-index: 10;
 
-
     }
 
     .desktopNav a {
         color: white;
         text-decoration: none;
-        padding: 10px;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        font-weight: bold;
     }
 
     .desktopNav ul {
         list-style-type: none;
+    }
+
+    .desktopNav li a:hover{
+        color: #C40000;
+        text-decoration: underline;
+    }
+
+    .contactBtn{
+        background-color: #C40000;
+        border-radius: 8px;
+        text-decoration: none !important;
+        color: white !important;
+    }
+
+    .contactBtn:hover{
+        background-color: #2a2a2a;
+    }
+
+    .flexContainer {
+        padding-top: 100px;
+    }
+
+}
+
+/* MediaQuery for desktopNav */
+
+
+/* MediaQuery for de 2 h2 overskrifter+indhold */
+@media screen and (min-width: 950px){
+    .indexContent{
+        max-width: 49%;
+    }
+    .infoImage{
+        max-width: 50%;
+        padding: 50px 20px 0 20px;
+    }
+
+    .infoFlex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flexReverse{
+        flex-direction: row-reverse;
     }
 
 }
@@ -576,6 +658,30 @@ nav ul.sub li a:hover { color: #c40000; }
 /* MediaQuery for slideshow */
 @media screen and (min-width: 820px) {
 
+    .hide{
+        display: flex;
+        width: 15%;
+        opacity: 0.5;
+    }
+
+    .slider{
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider img{
+        padding: 0 20px;
+    }
+
+    .slideShow{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .middle{
+        width: 20%;
+    }
 }
 
 /* MediaQuery for maps */
@@ -585,9 +691,15 @@ nav ul.sub li a:hover { color: #c40000; }
 
     .desktopMaps{
         display: inline;
+        padding: 50px 20px;
         min-width: 50%;
-        padding-bottom: 50px;
+        max-width: 50%;
 
+    }
+
+    .mapsFlex{
+        display: flex;
+        justify-content: space-between;
     }
 
     .maps{
@@ -605,4 +717,10 @@ nav ul.sub li a:hover { color: #c40000; }
 
 }
 
+/* MediaQuery for side padding */
+@media screen and (min-width: 1000px) {
+    .paddingContainer {
+        padding: 0 20%;
+    }
+}
 
