@@ -1,0 +1,161 @@
+a{
+    color:white;
+}
+
+nav{
+    display:none;
+}
+
+#NavBkg{
+    display:grid;
+    grid-template-columns:1fr;
+    background-image:url("../img/BikeMobile.jpg");
+    min-height:400px;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.NavOverskrift{
+    font-size:16px;
+    font-weight:bold;
+    grid-column:1/2;
+    color: white;
+    justify-self:center;
+    text-align: center;
+}
+
+.NavUnderOver{
+    font-size:3vw;
+    font-weight:bold;
+    grid-column:1/2;
+    color: white;
+    justify-self:center;
+    text-align: center;
+}
+
+.RedTekst{
+    color:red;
+}
+
+.NavTekst{
+    font-size:12px;
+    grid-column:1/2;
+    color: white;
+    justify-self:center;
+    text-align: center;
+}
+
+#Burger{
+    display:flex;
+    flex-direction:column;
+    place-content:center;
+    justify-self: end;
+    margin-right:2%;
+    grid-row:1;
+    grid-column:1/2;
+    z-index:2;
+    height:50px;
+    width:50px;
+    opacity:75%;
+}
+
+#imgbkg{
+    grid-row:1;
+    grid-column:1/2;
+}
+
+#BurgerContent{
+    background-color:seagreen;
+    display: none;
+    margin-top:50px;
+    min-height:200px;
+    width:100%;
+    grid-column:1/2;
+    grid-row:1;
+    place-content: center;
+    justify-self:center;
+}
+
+.FlexClass{
+    display: grid !important;
+}
+
+.NoneClass{
+    display: none;
+}
+
+.OmOsNav{
+    display:grid;
+    background-color:#C40000;
+    width:40%;
+    place-content:center;
+    min-height:10px;
+    border-radius:12px;
+    color:white;
+    margin:10% 0;
+    min-width:75px;
+    justify-self:center;
+}
+
+.footer{
+    grid-column: 1/-1;
+    background-color: black;
+    min-height:150px;
+}
+
+@media screen and (min-width:600px){
+
+    nav{
+        display:flex;
+        width:100%;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        min-height:50px;
+        grid-column: 1/-1;
+        grid-row:1;
+    }
+
+    #Burger{
+        display:none;
+    }
+
+    #NavBkg{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-column:1/-1;
+        background-image:url("../img/BikeMobile.jpg");
+        min-height:400px;
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+
+    .NavOverskrift{
+        font-size:16px;
+        font-weight:bold;
+        grid-column:1/2;
+        color: white;
+        justify-self:center;
+        text-align: center;
+    }
+
+    .NavUnderOver{
+        font-size:3vw;
+        font-weight:bold;
+        grid-column:1/2;
+        color: white;
+        justify-self:center;
+        text-align: center;
+    }
+
+    .RedTekst{
+        color:red;
+    }
+
+    .NavTekst{
+        font-size:12px;
+        grid-column:1/2;
+        color: white;
+        justify-self:center;
+        text-align: center;
+    }
+}
