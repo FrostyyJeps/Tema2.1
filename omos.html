@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Om os</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/8d0c68dd1c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="topSection">
+
+    <div class="logo">
+        <img src="img/Skilt.png" alt="CykleBørsen">
+    </div>
+
+
+    <div class="desktopNav">
+        <ul class="mainDesktop">
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="#">Vores Cykler</a></li>
+            <li><a href="bikefitting.html">Bike Fitting</a></li>
+            <li><a href="omos.html">Om Os</a></li>
+            <li><a href="foreninger.html">Foreninger</a></li>
+            <li><a href="kontakt.html" class="contactBtn">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <nav>
+        <ul class="main">
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="produkter.html">Vores Cykler</a></li>
+            <li><a href="bikefitting.html">Bike Fitting</a></li>
+            <li><a href="omos.html">Om Os</a></li>
+            <li><a href="foreninger.html">Foreninger</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+
+<div class="burger">
+    <span></span>
+</div>
+
+<div class="overlay"></div>
+
+
+<div class="flexContainer">
+
+    <div class="overSkrift">
+        <h1>OM OS</h1>
+    </div>
+
+    <div class="headerCta">
+        <button class="ctaButton headerButton">KONTAKT</button>
+    </div>
+
+</div>
+
+
+<!--<div class="afbetaling">-->
+<!--    <p>DEL DIN BETALING OP - ALTID 30-60 DAGES <span>FRI KREDIT</span></p>-->
+<!--</div>-->
+
+<div class="videoOverlay"></div>
+
+<video autoplay muted loop id="headerVideo">
+    <source src="video/CompressedHeader.mp4" type="video/mp4">
+</video>
+
+</div>
+
+
+<div class="paddingContainer">
+
+    <div class="infoFlex">
+        <div class="indexContent">
+
+            <div class="h2Settings">
+                <h2>VORES MEDARBEJDERE</h2>
+            </div>
+
+            <div class="pSettings">
+                <p class="infoText">Cyklebørsen huser 4 passionerede cykelmekanikere og sælgere.
+                    Mathias Kristiansen som arbejder i værkstedet og butikken.<br>
+                    Leif Petterson som arbejder i værkstedet og butikken.<br>
+                    Claus Rasmussen som arbejder i værkstedet og butikken.<br>
+                    Og Jan Højberg, ejer, som også arbejder i værkstedet og butikken.
+                </p>
+            </div>
+
+            <div class="buttonSettings">
+                <button class="ctaButtonInfo">KONTAKT</button>
+            </div>
+
+        </div>
+
+        <div class="infoImage2">
+            <img src="img/medarbjedere.png" alt="Butikkens frontdesk indenfor">
+        </div>
+
+    </div>
+
+    <div class="flexBox">
+        <div class="underline2"></div>
+    </div>
+
+    <div class="infoFlex flexReverse">
+        <div class="indexContent">
+
+            <div class="h2Settings">
+                <h2>VORES HISTORIE</h2>
+            </div>
+
+            <div class="pSettings">
+                <p class="infoText">Jan Højbjerg startede i 1986 hos Cyklebørsen.
+                    Interessen for cykler havde han haft siden han var ung.<br>
+                    I 1996 overtog Jan Cyklebørsen og dets dengang 100kvm store lokaler på Engboulevarden. <br>
+                    I 2011 ﬂyttede Cyklebørsen til nuværende lokaler, og ﬁk 300kvm ekstra.  Cyklebørsen blev i 1998 en del af Mosquito klub, som i dag hedder Bike&Co. <br>
+                    Da Jan overtog var der to medarbejdere, det tal er nu fordoblet til 4.
+                </p>
+            </div>
+
+            <div class="buttonSettings">
+                <button class="ctaButtonInfo">VORES CYKLER</button>
+            </div>
+
+        </div>
+
+        <div class="infoImage">
+            <img src="img/frontdesk.png" alt="Butikkens frontdesk indenfor">
+        </div>
+
+    </div>
+
+    <div class="flexBox">
+        <div class="underline2"></div>
+    </div>
+
+</div>
+
+
+    <div class="footer">
+        <p>©CykleBørsen</p>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $('.burger, .overlay').click(function(){
+                $('.burger').toggleClass('clicked');
+                $('.overlay').toggleClass('show');
+                $('nav').toggleClass('show');
+                $('body').toggleClass('overflow');
+            });
+
+            $(".mainDesktop a").click(function(){
+                $(".mainDesktop a").removeClass("active");
+                $(this).addClass("active");
+            });
+        </script>
+    </body>
+</html>

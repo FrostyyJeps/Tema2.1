@@ -1,12 +1,12 @@
-
+*{
+    font-family: 'Open Sans', sans-serif;
+}
 
 .peterCykel{
     padding: 50px 0;
     display: flex;
     justify-content: center;
 }
-
-
 
 .hvadErBikeFitting{
 min-width: 200px;
