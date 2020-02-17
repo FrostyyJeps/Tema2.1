@@ -35,7 +35,7 @@
         <ul class="mainDesktop">
             <li><a href="index.html">Forside</a></li>
             <li><a href="#">Vores Cykler</a></li>
-            <li><a href="#">Bike Fitting</a></li>
+            <li><a href="bikefitting.html">Bike Fitting</a></li>
             <li><a href="#">Om Os</a></li>
             <li><a href="#">Foreninger</a></li>
             <li><a href="#" class="contactBtn">Kontakt</a></li>
@@ -46,9 +46,9 @@
     <!-- mobile nav !-->
 <nav>
     <ul class="main">
-        <li><a href="#">Forside</a></li>
+        <li><a href="index.html">Forside</a></li>
         <li><a href="#">Vores Cykler</a></li>
-        <li><a href="#">Bike Fitting</a></li>
+        <li><a href="bikefitting.html">Bike Fitting</a></li>
         <li><a href="#">Om Os</a></li>
         <li><a href="#">Foreninger</a></li>
         <li><a href="#">Kontakt</a></li>
@@ -71,7 +71,7 @@
     </div>
 
     <div class="paragraph">
-        <p>Passionen for cykler udtrykkes i vores store sortiment som er nøje udvalgt efter høje kvalitetskrav.<br></p>
+        <p>Passionen for cykler udtrykkes i vores store sortiment som er nøje udvalgt efter høje kvalitetskrav.</p>
     </div>
 
     <div class="headerCta">
@@ -233,6 +233,11 @@
         $('.overlay').toggleClass('show');
         $('nav').toggleClass('show');
         $('body').toggleClass('overflow');
+    });
+
+    $(".mainDesktop a").click(function(){
+        $(".mainDesktop a").removeClass("active");
+        $(this).addClass("active");
     });
 
 

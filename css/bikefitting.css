@@ -1,0 +1,103 @@
+
+
+.peterCykel{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.hvadErBikeFitting{
+min-width: 200px;
+    padding-top: 20px;
+}
+
+.hvadErBikeFitting p{
+    padding-bottom: 10px;
+}
+
+.buttonSettings{
+    padding-bottom: 50px;
+}
+
+.kundeFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kundeFlex img{
+    padding-top: 50px;
+}
+
+.imgText{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.overskriftFlex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.h2Settings h2{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.pText p{
+    text-align: left;
+    padding: 10px 0;
+}
+
+.paddingContainer {
+    padding: 0 20px;
+}
+
+.h2Flex {
+    display: flex;
+    justify-content: center;
+}
+
+.endImg{
+    display: flex;
+    justify-content: center;
+}
+
+.underline{
+    display: flex;
+    justify-content: center;
+}
+
+.h2Settings {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoFlex{
+    padding-top: 50px;
+}
+
+@media screen and (min-width: 700px){
+    .peterCykel img{
+        max-width: 60%;
+    }
+
+    .paddingContainer{
+padding: 0 20%;
+    }
+
+    .infoImage img{
+        padding-bottom: 50px;
+    }
+
+    .btn2{
+        display: flex;
+        justify-content: center;
+    }
+
+}
