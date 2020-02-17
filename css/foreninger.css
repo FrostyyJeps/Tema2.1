@@ -4,14 +4,9 @@
 
 /* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
 
-html{
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0; /* Ingen kanter i siden af browser */
     font-family: 'Open Sans', sans-serif;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -371,16 +366,6 @@ nav ul.sub li a:hover { color: #c40000; }
     visibility: visible;
 }
 
-.headerButton{
-    padding-top: 200px;
-}
-
-.fa-arrow-circle-down{
-    font-size: 3rem;
-    color: #C40000;
-    cursor: pointer;
-}
-
 #headerVideo{
     right: 0;
     bottom: 0;
@@ -409,7 +394,6 @@ nav ul.sub li a:hover { color: #c40000; }
     align-items: center;
     justify-content: space-evenly;
     -webkit-animation: fadein 5s;
-    padding-top: 100px;
 }
 
 @-webkit-keyframes fadein {
@@ -447,10 +431,6 @@ nav ul.sub li a:hover { color: #c40000; }
     background-color: #2a2a2a;
 }
 
-.buttonSettings{
-    padding: 50px 0;
-}
-
 .afbetaling{
     display: flex;
     color: #f1f1f1;
@@ -470,18 +450,6 @@ nav ul.sub li a:hover { color: #c40000; }
     color: #C40000;
 }
 
-.h2Settings{
-    padding-top: 43px;
-}
-
-.infoImage{
-    padding-bottom: 60px;
-}
-
-.infoImage img{
-    box-shadow: 0 6px 50px grey;
-}
-
 .indexContent{
     padding: 0 20px;
     min-height: 300px;
@@ -498,20 +466,19 @@ nav ul.sub li a:hover { color: #c40000; }
 }
 
 .underline2 {
-    background-color: #ffffff;
+    background-color: #c4c4c4;
     height: 1px;
-    width: 300px;
+    width: 400px;
 }
 
 .flexBox{
     display: flex;
     justify-content: center;
-    padding: 30px 0;
+    padding-top: 20px;
 }
 
 .infoText {
     padding-top: 20px;
-    line-height: 2;
 
 }
 
@@ -567,7 +534,7 @@ nav ul.sub li a:hover { color: #c40000; }
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    min-height: 300px;
+    min-height: 200px;
     font-size: 1.5rem;
 }
 
@@ -586,38 +553,21 @@ nav ul.sub li a:hover { color: #c40000; }
     display: none;
 }
 
-
-
 .maps {
     width: 100%;
     height: 200px;
     border-style: none;
     padding-top: 30px;
-
 }
 
 .footer {
     background-color: #141414;
-    height: 200px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
 }
-
-.foreningOverskrift{
-    text-align: center;
-    padding: 20px;
-}
-
-.foreningOverskrift h2{
-    margin-bottom: 10px;
-}
-
-.hr1{
-    border: 1.2px solid rgba(224, 224, 224, 0.69);
-}
-
 
 
 /* MediaQuery for desktopNav */
@@ -651,14 +601,10 @@ nav ul.sub li a:hover { color: #c40000; }
         color: white;
         text-decoration: none;
         text-transform: uppercase;
-        padding: 5px 20px;
-        font-weight: 200;
+        padding: 5px 10px;
+        font-weight: bold;
     }
 
-    .currentPage{
-        border-bottom: 1px solid #c40000;
-        padding-bottom: 3px;
-    }
 
     .desktopNav ul {
         list-style-type: none;
@@ -666,8 +612,7 @@ nav ul.sub li a:hover { color: #c40000; }
 
     .desktopNav li a:hover{
         color: #C40000;
-        border-bottom: 1px solid #c40000;
-        padding-bottom: 3px;
+        text-decoration: underline;
     }
 
     .contactBtn{
@@ -698,7 +643,6 @@ nav ul.sub li a:hover { color: #c40000; }
     .infoImage{
         max-width: 50%;
         padding: 50px 20px 0 20px;
-
     }
 
     .infoFlex{
@@ -708,12 +652,6 @@ nav ul.sub li a:hover { color: #c40000; }
 
     .flexReverse{
         flex-direction: row-reverse;
-    }
-
-
-
-    .slideshowHeader{
-        padding-top: 50px;
     }
 
 }
