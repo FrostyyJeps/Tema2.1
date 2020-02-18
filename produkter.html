@@ -1,0 +1,308 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Skabelon</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="keywords" content="">
+    <meta name="author" content="Nikolai Raahauge">
+    <meta name="copyright" content="© Copyright 2019 Nikolai Raahauge">
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/produkter.css" rel="stylesheet" type="text/css">
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+
+<div class="GridBody">
+
+    <div class="topSection">
+
+        <div class="logo">
+            <img src="img/Skilt.png" alt="CykleBørsen">
+
+
+        </div>
+
+
+        <!-- desktop nav !-->
+        <div class="desktopNav">
+            <ul class="mainDesktop">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="produkter.html">Vores Cykler</a></li>
+                <li><a href="bikefitting.html" class="currentPage">Bike Fitting</a></li>
+                <li><a href="omos.html">Om Os</a></li>
+                <li><a href="foreninger.html">Foreninger</a></li>
+                <li><a href="Kontakt.html" class="contactBtn">Kontakt</a></li>
+            </ul>
+        </div>
+        <!-- desktop nav !-->
+
+        <!-- mobile nav !-->
+        <nav>
+            <ul class="main">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="produkter.html">Vores Cykler</a></li>
+                <li><a href="bikefitting.html">Bike Fitting</a></li>
+                <li><a href="omos.html">Om Os</a></li>
+                <li><a href="foreninger.html">Foreninger</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger">
+            <span></span>
+        </div>
+
+        <div class="overlay"></div>
+        <!-- mobile nav !-->
+
+        <div class="flexContainer">
+
+            <div class="overSkrift">
+                <h1>CYKEL UDVALG</h1>
+            </div>
+
+            <div class="paragraph">
+                <p>Komfort og ergonomi bør altid være en prioritet når der købes ny cykel.</p>
+            </div>
+
+            <div class="headerCta">
+                <button class="ctaButton headerButton">OM OS</button>
+            </div>
+
+        </div>
+
+
+        <div class="afbetaling">
+            <p>DEL DIN BETALING OP - ALTID 30-60 DAGES <span>FRI KREDIT</span></p>
+        </div>
+
+        <div class="videoOverlay"></div>
+
+        <video autoplay muted loop id="headerVideo">
+            <source src="../CykelProduktSide/video/CompressedHeader.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+
+</div>
+    <div class="bkg">
+        <div class="CykelType">
+            <p class="CykelLink" id="ElCykel">El cykel</p>
+<!--            <p>/</p>-->
+            <p class="CykelLink" id="HverdagsCykel">Hverdags cykel</p>
+<!--            <p>/</p>-->
+            <p class="CykelLink" id="MountainBike">Mountain bike</p>
+        </div>
+        <div id="ElCykler">
+            <a href="#" class="Container">
+                <img src="img/BatavusStratos.jpg" alt="Falter E-90">
+                <p class="navn">Batavus Stratos</p>
+                <p class="pris">17.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/falterE.jpg" alt="Falter E-90">
+                <p class="navn">falter e 9.0</p>
+                <p class="pris">19.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/GazelleArroyoC7.jpg" alt="Falter E-90">
+                <p class="navn">Gazelle Arroyo c7+</p>
+                <p class="pris">18.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/GazelleMedeo.jpg" alt="Falter E-90">
+                <p class="navn">Gazelle Medeo</p>
+                <p class="pris">18.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/GazelleParis.jpg" alt="Falter E-90">
+                <p class="navn">Gazelle Paris c7+</p>
+                <p class="pris">17.499,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/GazelleUltimate.jpg" alt="Falter E-90">
+                <p class="navn">Gazelle ultimate c8+</p>
+                <p class="pris">24.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/SpecializedComo.jpg" alt="Falter E-90">
+                <p class="navn">Specialized como 3</p>
+                <p class="pris">21.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/SpecializedVado.jpg" alt="Falter E-90">
+                <p class="navn">Specialized turbo vado 3</p>
+                <p class="pris">21.999,-</p>
+            </a>
+        </div>
+
+
+        <div id="HverdagsCykler">
+            <a href="#" class="Container">
+                <img src="img/BatavusStratos.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en hverdags cykel</p>
+                <p class="pris">17.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/falterE.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en hverdags cykel</p>
+                <p class="pris">19.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/GazelleArroyoC7.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en hverdags cykel</p>
+                <p class="pris">18.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/GazelleMedeo.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en hverdags cykel</p>
+                <p class="pris">18.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/GazelleParis.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en hverdags cykel</p>
+                <p class="pris">17.499,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/GazelleUltimate.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en hverdags cykel</p>
+                <p class="pris">24.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/SpecializedComo.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en hverdags cykel</p>
+                <p class="pris">21.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/SpecializedVado.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en hverdags cykel</p>
+                <p class="pris">21.999,-</p>
+            </a>
+        </div>
+
+        <div id="MountainBikes">
+            <a href="#" class="Container">
+                <img src="img/BatavusStratos.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en Mountainbike</p>
+                <p class="pris">17.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/falterE.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en Mountainbike</p>
+                <p class="pris">19.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/GazelleArroyoC7.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en Mountainbike</p>
+                <p class="pris">18.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/GazelleMedeo.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en Mountainbike</p>
+                <p class="pris">18.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/GazelleParis.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en Mountainbike</p>
+                <p class="pris">17.499,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/GazelleUltimate.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en Mountainbike</p>
+                <p class="pris">24.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/SpecializedComo.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en Mountainbike</p>
+                <p class="pris">21.999,-</p>
+            </a>
+
+            <a href="#" class="Container">
+                <img src="img/SpecializedVado.jpg" alt="Falter E-90">
+                <p class="navn">Indsæt en Mountainbike</p>
+                <p class="pris">21.999,-</p>
+            </a>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>©CykleBørsen</p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    $(function(){
+        var AniTime = 1200
+        $('.burger, .overlay').click(function(){
+            $('.burger').toggleClass('clicked');
+            $('.overlay').toggleClass('show');
+            $('nav').toggleClass('show');
+            $('body').toggleClass('overflow');
+        });
+        $('#ElCykel').click(function(){
+            $('#MountainBikes').css("display","none");
+            $('#HverdagsCykler').css("display","none");
+            $('#MountainBikes').hide(AniTime);
+            $('#HverdagsCykler').hide(AniTime);
+            $('#ElCykler').show(AniTime);
+            $('#ElCykler').css("display","flex")
+        });
+        $('#HverdagsCykel').click(function(){
+            $('#MountainBikes').css("display","none");
+            $('#ElCykler').css("display","none");
+            $('#MountainBikes').hide(AniTime);
+            $('#ElCykler').hide(AniTime);
+            $('#HverdagsCykler').show(AniTime);
+            $('#HverdagsCykler').css("display","flex")
+        });
+        $('#MountainBike').click(function(){
+            $('#ElCykler').css("display","none");
+            $('#HverdagsCykler').css("display","none");
+            $('#HverdagsCykler').hide(AniTime);
+            $('#ElCykler').hide(AniTime);
+            $('#MountainBikes').show(AniTime);
+            $('#MountainBikes').css("display","flex");
+        });
+    });
+
+</script>
+
+</body>
+</html>
