@@ -189,57 +189,55 @@
 
 
     </div>
-    <div class="desktopMaps">
-        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2301.0991712880386!2d11.864522415788239!3d54.77822368030392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ad3101e55a4c69%3A0x746c1f5db428b704!2sCykleb%C3%B8rsen!5e0!3m2!1sen!2sdk!4v1581371635789!5m2!1sen!2sdk" allowfullscreen=""></iframe>
+            <div class="desktopMaps">
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2301.0991712880386!2d11.864522415788239!3d54.77822368030392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ad3101e55a4c69%3A0x746c1f5db428b704!2sCykleb%C3%B8rsen!5e0!3m2!1sen!2sdk!4v1581371635789!5m2!1sen!2sdk" allowfullscreen=""></iframe>
+            </div>
+
     </div>
 
-</div>
+            <div class="mobileMaps">
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2301.0991712880386!2d11.864522415788239!3d54.77822368030392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ad3101e55a4c69%3A0x746c1f5db428b704!2sCykleb%C3%B8rsen!5e0!3m2!1sen!2sdk!4v1581371635789!5m2!1sen!2sdk" allowfullscreen=""></iframe>
+            </div>
 
-<div class="mobileMaps">
-    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2301.0991712880386!2d11.864522415788239!3d54.77822368030392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ad3101e55a4c69%3A0x746c1f5db428b704!2sCykleb%C3%B8rsen!5e0!3m2!1sen!2sdk!4v1581371635789!5m2!1sen!2sdk" allowfullscreen=""></iframe>
-</div>
+    </div>
 
-        </div>
-
-<div class="footer">
-<p>©CykleBørsen</p>
-</div>
-
-
+    <div class="footer">
+        <p>©CykleBørsen</p>
+    </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
+    <script>
 
-    $('.burger, .overlay').click(function(){
-        $('.burger').toggleClass('clicked');
-        $('.overlay').toggleClass('show');
-        $('nav').toggleClass('show');
-        $('body').toggleClass('overflow');
-    });
+        $('.burger, .overlay').click(function(){
+            $('.burger').toggleClass('clicked');
+            $('.overlay').toggleClass('show');
+            $('nav').toggleClass('show');
+            $('body').toggleClass('overflow');
+        });
 
-    $(document).ready(function() {
+        $(document).ready(function() {
 
-        $(window).scroll( function(){
+            $(window).scroll( function(){
 
-            $('.indexContent').each( function(i){
+                $('.indexContent').each( function(i){
 
-                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-                if( bottom_of_window > bottom_of_object ){
+                    if( bottom_of_window > bottom_of_object ){
 
-                    $(this).animate({'opacity':'1'},1300);
+                        $(this).animate({'opacity':'1'},1300);
 
-                }
+                    }
+
+                });
 
             });
 
         });
 
-    });
+    </script>
 
-
-</script>
 </body>
 </html>
