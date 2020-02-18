@@ -3,7 +3,7 @@
 }
 
 .peterCykel{
-    padding: 50px 0;
+    padding: 100px 0 50px 0;
     display: flex;
     justify-content: center;
 }
@@ -50,14 +50,26 @@ min-width: 200px;
 }
 
 .h2Settings h2{
-    font-size: 1.1rem;
     text-align: center;
+}
+
+.h2Settings h2{
+    font-size: 1.1rem;
 }
 
 .pText p{
     text-align: left;
     padding: 10px 0;
 }
+
+.imgText h3{
+    font-size: 1rem;
+}
+
+.imgText p{
+    font-size: 0.9rem;
+}
+
 
 .paddingContainer {
     padding: 0 20px;
@@ -102,6 +114,17 @@ min-width: 200px;
     font-size: 0.8rem;
 }
 
+.infoText{
+    font-size: 0.9rem;
+}
+
+.cykelFlex{
+    padding-top: 50px;
+}
+
+.wtf{
+    padding-bottom: 75px;
+}
 
 @media screen and (min-width: 700px){
     .peterCykel img{
@@ -113,7 +136,7 @@ padding: 0 20%;
     }
 
     .infoImage img{
-        padding-bottom: 50px;
+
     }
 
     .btn2{

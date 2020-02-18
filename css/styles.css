@@ -380,6 +380,10 @@ nav ul.sub li a:hover { color: #c40000; }
     cursor: pointer;
 }
 
+.fa-arrow-circle-down:hover{
+    color: white;
+}
+
 #headerVideo{
     right: 0;
     bottom: 0;
