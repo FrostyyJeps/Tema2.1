@@ -80,16 +80,18 @@ button:focus{
     grid-template-columns:1fr;
     justify-items:center;
     margin:10% 0;
+    text-decoration:none;
+    color:black;
 }
 
 .navn{
     font-weight: lighter;
-    font-size:12px;
+    font-size:4vw;
     justify-self:start;
 }
 
 .pris{
-    font-size:36px;
+    font-size:4vw;
     justify-self:start;
 }
 
@@ -97,22 +99,9 @@ button:focus{
     display: none;
 }
 
-.OmOs{
-    display:grid;
-    background-color:#C40000;
-    width:40%;
-    place-content:center;
-    min-height:10px;
-    border-radius:12px;
-    color:white;
-    margin:10% 0;
-    min-width:75px;
-    justify-self:center;
-}
-
 @media screen and (min-width:600px){
     .GridBody{
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr;
     }
 
     .bkg{
@@ -126,6 +115,27 @@ button:focus{
     }
 
     .Container{
+        width:35%;
+        display:grid;
+        grid-template-columns:1fr;
+        justify-items:center;
+        margin:5% 2.5%;
+    }
+
+    .navn{
+        font-weight: lighter;
+        font-size:2vw;
+        justify-self:start;
+    }
+
+    .pris{
+        font-size:2vw;
+        justify-self:start;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .Container{
         width:20%;
         display:grid;
         grid-template-columns:1fr;
@@ -133,4 +143,14 @@ button:focus{
         margin:5% 2.5%;
     }
 
+    .navn{
+        font-weight: lighter;
+        font-size:1vw;
+        justify-self:start;
+    }
+
+    .pris{
+        font-size:1vw;
+        justify-self:start;
+    }
 }
