@@ -492,6 +492,7 @@ nav ul.sub li a:hover { color: #c40000; }
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    opacity: 0;
 
 }
 
