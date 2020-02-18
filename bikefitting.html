@@ -200,19 +200,17 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-    $('.burger, .overlay').click(function(){
-        $('.burger').toggleClass('clicked');
-        $('.overlay').toggleClass('show');
-        $('nav').toggleClass('show');
-        $('body').toggleClass('overflow');
+    $(document).ready(function() {
+        $('.burger, .overlay').click(function () {
+            $('.burger').toggleClass('clicked');
+            $('.overlay').toggleClass('show');
+            $('nav').toggleClass('show');
+            $('body').toggleClass('overflow');
+        });
     });
 
     $(document).ready(function() {
-
-
         $(window).scroll( function(){
-
-
             $('.indexContent').each( function(i){
                 var bottom_of_object = $(this).offset().top + $(this).outerHeight();
                 var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -222,6 +220,42 @@
             });
         });
 
+    });
+
+    $(document).ready(function() {
+        $(window).scroll( function(){
+            $('.hvadErBikeFitting').each( function(i){
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                if( bottom_of_window > bottom_of_object ){
+                    $(this).animate({'opacity':'1'},1300);
+                }
+            });
+        });
+    });
+
+    $(document).ready(function() {
+        $(window).scroll( function(){
+            $('.kundeFlex2').each( function(i){
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                if( bottom_of_window > bottom_of_object ){
+                    $(this).animate({'opacity':'1'},1300);
+                }
+            });
+        });
+    });
+
+    $(document).ready(function() {
+        $(window).scroll( function(){
+            $('.infoFlex').each( function(i){
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                if( bottom_of_window > bottom_of_object ){
+                    $(this).animate({'opacity':'1'},1300);
+                }
+            });
+        });
     });
 
 </script>
